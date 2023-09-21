@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practive.css">
+</head>
+<body>
+    <form action="/test.html" id="formText">
+        First Name: <input type="text" id="input" value="bao">
+        <br>Last Name: <input type="text" id="input" value="tru">
+        <br><input type="submit">
+    </form>
+    <p id="copy"></p>
+    <p>Hello world</p>
+    <div id="main" class="main">
+        <p class="bao" id="bao"></p>
+        <p>tru van bao</p>
+    </div>
+    <p id="copy1"></p>
+
+    <p id="date"></p>
+
+
+    <div id="blockMain">
+        <div class="blockColor blockRed"></div>
+        <div class="blockColor blockBlue"></div>
+        <div class="blockColor blockGreen"></div>
+        <div class="blockColor blockYellow"></div>
+    </div>
+    <button id="buttonMove" onclick="actionAlignContentBetween()">Space Between</button>
+    <button id="buttonMove" onclick="actionAlignContentAround()">Space Around</button>
+    <button id="buttonMove" onclick="actionAlignContentStretch()">Space Stretch</button>
+    <button id="buttonMove" onclick="actionAlignContentCenter()">Space Center</button>
+    <button id="buttonMove" onclick="actionAlignContentFlexStart()">Space Flex Start</button>
+    <button id="buttonMove" onclick="actionAlignContentFlexEnd()">Space Flex End</button>
+
+    <div id="itemMain">
+        <div class="itemColor" id="item-Red">red Stretch</div>
+        <div class="itemColor" id="item-Green">green Center</div>
+        <div class="itemColor" id="item-Yellow">yellow Stretch</div>
+        <div class="itemColor" id="item-Blue">blue Flex End</div> 
+    </div>
+    <button class="itemButton" onclick="actionAlignItemBetween()">Try it</button>
+   
+    <div id="blockAnimation" onmouseout="mouseOut(this)" onmouseover="mouseOver(this)"></div>
+    <button class="itemButton" onclick="moveBlock()">Click To Move To Right</button>
+    <button class="itemButton" onclick="playBlock()">Play</button>
+    <button class="itemButton" onclick="pausedBlock()">Paused</button>
+
+    <div id="container">
+        <div id="animate" onmouseup="mouseUp(this)" onmousedown="mouseDown(this)" ></div>
+    </div>
+    <button class="itemButton" onclick="myAnimation()">Click Me</button>
+    <form action="#" id="formCalculation">
+        Number One: <input type="number" id="numberOne">
+        <br>Number Two: <input type="number" id="numberTwo">
+        <br>Result: <input type="text" id="result">
+        <br> <br> <input type="submit" id="submit" value="return value" onclick="sum()">
+    </form>
+
+
+    <form action="#" id="form_1">
+
+        <div class="form_input">
+            <label for="Enter Name" class="text_value" id="text_name">Enter Name</label>
+            <input type="text" class="enter_value" id="enter_name">
+            <span class="message">this is not name</span>
+        </div>
+        
+        <div class="form_input">
+            <label for="Enter Password" class="text_value" id="text_password">Enter Password</label>
+            <input type="password" class="enter_value" id="enter_password">
+            <span class="message">this is not password</span>
+        </div>
+
+        <input type="submit" id="button_submit" value="Submit">
+    </form>
+    <script src="practive.js"></script>
+</body>
+</html> 

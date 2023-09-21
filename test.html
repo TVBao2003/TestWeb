@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bao Hoc HTML</title>
+    <link rel="stylesheet" href="url - file:///C:/Users/b%E1%BA%A3o/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.3/out/startpage/index.html">
+    <style>
+        .information{
+           margin-top: 10px;
+        }
+
+        .body{
+            background: linear-gradient(75deg, red, blue);
+            color: white;
+            height: 100%;
+        }
+
+        .study{
+            color:black;
+            border-style: dashed;
+            border: 5px dashed #ccc;
+            background-color: #22776d;
+            background-origin: border-box;
+            box-sizing:border-box;
+        }
+
+        .box{
+            color: white;
+            box-sizing: border-box;
+            font-size: 15px;
+            width: 50px;
+            height: 50px;
+            padding: 13px 18px;
+            border-radius: 50px;
+            margin-top: 5px;
+            display:inline-flex;
+            border-style: double;
+        }
+
+        .box1{
+            background-color: red; 
+        }
+
+        .box2{
+            background-color: blue;
+            margin-left: 20px;
+        }
+
+        .box3{
+            background-color: rgb(201, 201, 91);
+            margin-left: 20px;
+        }
+
+        .box-test{
+            color: white;
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            padding: 32px 30px;
+            border-style:double;
+            box-sizing: border-box; 
+            background-color: #686869;
+            background-clip:border-box;
+            background-origin: border-box;
+        }
+
+        .photo_cat{
+            width: 300px;
+            height: 300px;
+            opacity: 0.9;
+            background-color: rgb(116, 57, 245);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url(https://img.freepik.com/free-vector/cute-cat-sitting-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-4148.jpg?w=740&t=st=1680094280~exp=1680094880~hmac=afd5642beff5d738d27bfffa8917d36ef59e8ed47a5bc0d92ecef701b9302114);
+            border: 10px rgb(246, 241, 195) dashed ;
+            box-sizing: border-box;
+            background-origin: padding-box;
+            box-shadow: -50px 30px 25px rgba(0,0,0,0.3), -30px 20px 15px rgba(0, 0, 0, 0.4);
+            margin: auto;
+            
+        }
+        .photo_cat:hover{
+            animation-name: trans;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes trans{
+            50%{
+                transform: skew(30deg,10deg);
+            }   
+        }
+        
+        .content{
+            background: linear-gradient(15deg, rgb(255, 0, 0), rgb(0, 110, 255));
+            position:absolute;
+            right:0; 
+            left:0;
+            top:0;
+            display:flex;
+            justify-content:space-between;
+        }
+
+        .content-item{
+          display:flex;
+          justify-content:space-between;
+          color:white;
+        }
+
+        .content-item_main{
+           display:inline-block;
+           margin-right:20px;
+        }
+
+        .sign-in{
+            background: linear-gradient(45deg, rgb(0, 0, 255), rgb(0, 242, 255));
+            width: 400px;
+            height: 300px;
+            position:relative;
+            border-radius: 50px;
+            margin: auto;
+            margin-top:100px;
+            box-shadow: 20px -20px 20px 0px rgba(0,0,0,0.4), 15px -6px 6px rgba(0,0,0,0.4);
+        }
+        .input-signIn{
+            color: violet;
+            border-radius: 20px;
+            border-color:#d70f84;
+            background-color: rgba(0,0,0,0.5);
+            width: 260px;
+            height: 30px;
+            position: relative;
+            left:120px;
+            border-style:groove;
+        }
+
+        .input-signIn:hover{
+            border-color: #a55bfb;
+        }
+        .input-account{
+            top:51px;
+        }
+        .input-password{
+            top:79px;
+        }
+        .content-sigIn{
+            color: #99e4fb;
+            position: relative;
+            text-align: center;
+            top: 50px; 
+        }
+
+        .content-sigIn_text{
+            color:#99e4fb;
+            position:absolute;
+            left:30px;
+        }
+        .account{
+            top:100px;
+        }
+
+        .password{
+            top:165px;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <script src="./test.js"></script>
+    <header>
+        <div class="content">
+            <ul class="content-item">
+                <li class="content-item_main">Trang Chủ</li>
+                <li class="content-item_main">Tìm Kiếm</li>
+                <li class="content-item_main">Giời Thiệu</li>
+                <li class="content-item_main">Lịch Sử</li>
+            </ul>
+            <ul class="content-item">
+                <li class="content-item_main">Đăng Nhập</li>
+                <li class="content-item_main">Đăng Kí</li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <style>
+            #audio_first{
+                display: block;
+                margin: auto;
+            }
+            .photo_dev{
+                text-align: center;
+            }
+        </style>
+        <br>
+        <br>
+        <p>I'm <s>Bao</s>, today i am studying <em>code</em> <strong>HTML</strong> on <u>TEK4</u> website, i feel so tired but i will try to study to success </p>
+        <input tabindex="1" type="submit" value="submit">
+        <button tabindex="-1" type="submit">submit</button>
+        <br>
+        <br>
+        <article>
+            <section>
+                <fieldset>
+                    <legend>                        
+                        <strong>Truyền Thông Dữ Liệu</strong>                       
+                    </legend>                                           
+                    <h1><strong>Truyền thông dữ liệu là gì?</strong></h1>               
+                    <p >Truyền thông dữ liệu là truyền dữ liệu thông tin bằng các cử chỉ hoặc bằng công nghệ được thiết kế giữ cá nhân và chổ chức truyền dữ từ nơi này đến nơi khác từ cá nhân này đến cá nhân khác.</p>
+                    <h1>
+                        <strong >Các phương tiện truyền thông:</strong>
+                    </h1>
+                    <nav>
+                        <ol >
+                            <li><p >Giao Tiếp</p></li>
+                            <li><p>Báo, Truyền Hình, Đài Phát Thanh</p></li>
+                            <li><p>Thư Trực Tiếp, Thư Điện Tử, Internet</p></li>
+                        </ol>
+                    </nav>
+                </fieldset>
+            </section>
+            <br>                
+            <section>
+                <fieldset>
+                    <legend>
+                        <strong>Mạng Máy Tính</strong>
+                    </legend>
+                    <p>Mạng máy tính là một nhóm các máy tính hoặc các thiết bị ngoại vi được kết nối với nhau thông qua các phương tiện truyền dẫn như dây xoắn , cáp quang, sóng điện từ, tia hồng ngoại.</p>
+                    <p>Dữ liệu truyền từ máy này đến máy khác đều là các bit 0 và 1, sau khi biến đổi thành điện áp hoặc sóng điện từ sẽ chuyển đến môi trường chuyển dẫn.</p>
+                </fieldset>
+            </section>
+            <br>
+            <section>
+                <fieldset>
+                    <legend>
+                        <strong>Kỹ Thuật Sử Dụng CSS</strong>
+                    </legend>
+                    <nav>
+                        <ol>
+                            <li><p><em>Inline CSS:</em> mã CSS được viết bên trong chính phần tử HTML thông qua thuộc tính style.</p></li>
+                            <li><p><em>Internal CSS:</em> mã CSS được viết bên thẻ style trong chính văn bản HTML.</p></li>
+                            <li><p><em>External CSS:</em> mã CSS được viết thành một file riêng biệt độc lập sau đó được nạp vào HTML thông qua thẻ link.</p></li>
+                        </ol>
+                    </nav>
+                </fieldset>
+            </section>
+            <br>
+            <section>
+                <fieldset>
+                    <legend>
+                        <strong>Các Loại Mạng: </strong>
+                    </legend>
+                    <nav>
+                        <ul>
+                            <li><p>LAN:<em>Local area network</em></p></li>
+                            <li><p>MAN:<em>Metropolitan area network</em></p></li>
+                            <li><p>WAN:<em>Wide area network</em></p></li>
+                        </ul>
+                    </nav>
+                </fieldset>
+            </section>
+        </article>
+        <br>
+        <br>
+        <audio id="audio_first" autoplay preload controls loop tabindex="-1" type="audio/ogg"  src="music1.mp3"></audio>
+        <br>
+        <br>
+        <fieldset>
+            <legend  tabindex="0" ><strong>Position of Label Tags</strong></legend>
+            <label for="input-first">Have Label Tag Outside</label>
+            <input id="input-first" value="fe" type="radio" name="bao">
+            <br>
+            <label> Have Label Tag Inside:
+                <input value="be" type="radio" name="bao">
+            </label>
+        </fieldset>
+        <br>
+        <a  href="https://vlxx.moe/jv/" accesskey="u">click [Alt + u] to point link!</a>
+        <br>
+        <br>
+        <figure class="photo_dev">
+            <img width="500px" height="300px" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+            <figcaption>I am studying code HTML and CSS</figcaption>
+        </figure>
+        <nav>
+            <ul>
+                <li>Name: Truong Van Bao</li>
+                <li>Birth day: 20/12/2003</li>
+                <li>Address: Tien Giang, Viet Nam</li>
+                <li>The name of university: Tien Giang University</li>
+            </ul>
+        </nav>
+    </main>
+
+    <footer>
+        <style>
+            :root{
+                --color_block: rgb(255, 213, 0);
+                --color_block1: #800080;
+                --color_block2: #29d6b2;
+            }
+            #block_contain{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                padding: 10px;
+                position: relative;
+                margin: auto;
+            }
+            .block{
+                width: 80px;
+                height: 80px;
+                
+            }
+            #block_first{
+                background-color: #a55bfb;
+                float: left;
+            }
+            #block_second{
+                background-color: var(--color_block);
+                float: right;
+            }
+            #block_top{
+                background-color: var(--color_block1);
+                position: absolute;
+                top: 115px;
+                left: 30px;
+                z-index: 2;
+            }
+            #block_bottom{
+                background-color: var(--color_block2);
+                position: absolute;
+                top: 100px;
+                z-index: 1;
+            }
+
+            #block_contain-flex{
+                width: 800px;
+                height: 800px;
+                background-color: black;
+                margin: auto;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .block-flex{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                
+            }
+            
+        </style>
+
+        <div id="block_contain">
+            <div class="block" id="block_first"></div>
+            <div class="block" id="block_second"></div>
+            <div class="block" id="block_top"></div>
+            <div class="block" id="block_bottom"></div>
+        </div>
+
+        <div id="block_contain-flex">
+            <div id="block_second" class="block-flex"></div>
+            <div class="block-flex"></div>
+            <div id="block_first" class="block-flex"></div>
+            <div class="block-flex"></div>
+            <div id="block_second" class="block-flex"></div>
+        </div>
+        <div class="information">
+            <ul>
+                <li>I'm studing HTML</li>
+                <li>I'm so tierd</li>
+            </ul>
+        </div>
+    
+        <div class="study">
+            <table>
+                <thead>
+                    <th>STT</th>
+                    <th>FUll Name</th>
+                    <th>Age</th>
+                    <th>Address</th>
+                </thead>
+                <tbody>
+                    <th>1</th>
+                    <th>Truong Van Bao</th>
+                    <th>20</th>
+                    <th>Tien Giang</th>
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="box box1">B</div>
+        <div class="box box2">V</div>
+        <div class="box box3">T</div>
+        <div class="box-test">BOX TEST</div>
+        <div class="photo_cat"></div>
+    
+        <div class="sign-in">
+            <h1 class="content-sigIn">Sigin</h1>
+            <p class="content-sigIn_text account"><b>Đăng Nhập</b></p>
+            <p class="content-sigIn_text password"><b>Mật Khẩu</b></p>
+            <input placeholder="  Account" class="input-signIn input-account" type="text">
+            <input placeholder="  Password" class=" input-signIn input-password" type="password">
+        </div>
+
+        <style>
+            #background_heart{
+                width: 300px;
+                height: 300px;
+                background-color :#d70f84;
+                border-radius: 50px;
+                position: relative;
+                top: 50px;
+                margin: auto;
+                animation-name: beat_change_color;
+                animation-duration: 1.2s;
+                animation-iteration-count: infinite;
+            }
+
+            #heart{
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                transform: rotate(-45deg);
+                animation-name: heartBeat;
+                animation-duration: 1.2s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes heartBeat{
+                50%{
+                    transform: scale(0.1) rotate(-60deg);
+                }
+            }
+            @keyframes beat_change_color{
+                50%{
+                    background-color: black;
+                }
+            }
+
+            #heart:after{
+                content: "";
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+                position: absolute;
+                top: 0px;
+                left: 50px;
+            }
+
+            #heart:before{
+                content: "";
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color: pink;
+                position: absolute;
+                top: -50px;
+                left: 0px;
+            }
+        </style>
+
+        <div id="background_heart">
+            <div id="heart"></div>
+        </div>
+        <style>
+            :root{
+                --bear_skin-brown: brown;
+            }
+            #block_parent{
+                width: 500px;
+                height: 500px;
+                background-color: white;
+                position: relative;
+                top: 150px;
+                margin: auto;
+            }
+            #block_child{
+                height: 100px;
+                width: 100px;
+                border-radius: 40px;
+                background-color: var(--bear_skin-brown);
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                transform: rotate(90deg);
+            }
+            #block_child::after{
+                content: "";
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                background-color: var(--bear_skin-brown);
+                position: absolute;
+                top: -20px;
+                left: -20px;
+            }
+            #block_child::before{
+                content: "";
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                background-color: var(--bear_skin-brown);
+                position: absolute;
+                bottom: -20px;
+                left: -20px;
+            }
+            #block_baby{
+                width: 10px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: black;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 40px;
+                animation-name: moveEar;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+            #block_baby::after{
+                width: 17px;
+                height: 15px;
+                border-radius: 50px;
+                background-color: black;
+                content: "";
+                position: absolute;
+                left: -35px;
+                top: -20px;
+                animation-name: moveRightEye;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            #block_baby::before{
+                content: "";
+                width: 17px;
+                height: 15px;
+                background-color: black;
+                border-radius: 50%;
+                position: absolute;
+                left: -35px;
+                top: 20px;
+                animation-name: moveLeftEye;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes moveRightEye{
+                50%{
+                    top: -15px;
+                }
+            }
+            @keyframes moveLeftEye{
+                50%{
+                    top: 25px;
+                }
+            }
+            @keyframes moveEar{
+                50%{
+                    height: 18px;
+                }
+            }
+            
+        </style>
+        <div id="block_parent">
+            <div id="block_child">
+                <div id="block_baby"></div>
+            </div>
+        </div>
+        
+        <style>
+            #contain_plan{
+                height: auto;
+                width: auto;
+                background-color: white;
+                position: relative;
+                top: 200px;
+                display: grid;
+                grid-template-columns: repeat(4, 200px);
+                grid-template-rows: repeat(2,150px);
+                text-align: center;
+            }
+            .plan{
+                width: 100px;
+                height: 100px;
+                background-color: black;
+                margin-top: 10px;
+                margin: auto;
+                padding: 10px;
+            }
+             #block_contain-grid{
+                height: 200px;
+                width: 200px;
+                background-color: black;
+            }
+        </style>
+        <article id="contain_plan">
+            <div class="plan">English <br><br> CNXH</div>
+            <div class="plan"></div>
+            <div class="plan">DataBase</div>
+            <div class="plan">Exercise</div>
+            <div class="plan">Computers network</div>
+            <div class="plan">Kĩ thuật lập trình</div>
+            <div class="plan">OOP</div>
+            <div class="plan"></div>
+        </article>
+
+        <style>
+            #block_contain-grid{
+                height: auto;
+                width: 400px;
+                background-color: rgb(0, 149, 255);
+                position: relative;
+                top: 250px;
+                padding: 10px;
+                margin: auto;
+                display: grid;
+                gap: 10px;
+                grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+                
+            }
+            .block-grid{
+                padding: 20px 0;
+                text-align: center;
+                font-size: 20px;
+                background-color: rgba(0, 187, 255, 0.926);
+            }
+            #block1{
+                grid-column: 1 /span 3;
+                grid-row: 2/ span 3;
+                
+            }
+        </style>
+
+        <article id="block_contain-grid">
+            <div id="block1" class="block-grid">
+                <1></1>
+            </div>
+            <div id="block2" class="block-grid">
+                <2></2>
+            </div>
+            <div id="block3" class="block-grid">
+                <3></3>
+            </div>
+            <div id="block4" class="block-grid">
+                <4></4>
+            </div>
+            <div id="block5" class="block-grid">
+                <5></5>
+            </div>
+            <div id="block6" class="block-grid">
+                <6></6>
+            </div>
+            <div id="block7" class="block-grid">
+                <7></7>
+            </div>
+            <div id="block8" class="block-grid">
+                <8></8>
+            </div>
+            <div id="block9" class="block-grid">
+                <9></9>
+            </div>
+            <div id="block10" class="block-grid">
+                <10></10>
+            </div>
+            <div id="block11" class="block-grid">
+                <11></11>
+            </div>
+            <div id="block12" class="block-grid">
+                <12></12>
+            </div>
+            <div id="block13" class="block-grid">
+                <13></13>
+            </div>
+            <div id="block14" class="block-grid">
+                <14></14>
+            </div>
+            <div id="block15" class="block-grid">
+                <15></15>
+            </div>
+            <div id="block16" class="block-grid">
+                <16></16>
+            </div>
+            <div id="block17" class="block-grid">
+                <17></17>
+            </div>
+            <div id="block18" class="block-grid">
+                <18></18>
+            </div>
+            <div id="block19" class="block-grid">
+                <19></19>
+            </div>
+            <div id="block20" class="block-grid">
+                <20></20>
+            </div>
+            
+        </article>
+    </footer>
+    
+</body>
+</html>

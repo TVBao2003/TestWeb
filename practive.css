@@ -1,0 +1,146 @@
+body{
+    height: 10000px;
+}
+#formText{
+    height:200px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+#buttonMove{
+    margin: 10px;
+}
+#blockMain{
+    width: 280px;
+    height: 200px;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+#itemYellow{
+    color: black;
+}
+.blockColor{
+    width:50px;
+    height:50px;
+    margin: 0 10px 0 10px ;
+}
+.blockRed{
+    background-color: red;
+}
+.blockYellow{
+    background-color: yellow;
+}
+.blockGreen{
+    background-color: green;
+}
+.blockBlue{
+    background-color: blue;
+}
+
+#itemMain{
+    width: 300px;
+    height: 200px;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.itemColor {
+    color: white;
+    flex:1;
+}
+#item-Red{
+    background-color: red;
+}
+#item-Green{
+    background-color: green;
+}
+#item-Yellow{
+    background-color: yellow;
+}
+#item-Blue{
+    background-color: blue;
+}
+.itemButton{
+    margin: 20px 0 20px 50px;
+}
+
+#blockAnimation{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    animation: toRadius 3s infinite;
+}
+
+@keyframes toRadius{
+   50%{border-radius: 100%;}
+}
+@keyframes toMove{
+    from{left: 0px;}
+    to{left:1000px;}
+}
+
+
+#container{
+     height: 500px;
+     width: 500px;
+     border: 2px solid;
+     position: relative;
+}
+#animate{
+    height:100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+}
+
+#formCalculation{
+    margin: 50px;
+}
+
+#form_1{
+    height: 500px;
+    width: 500px;
+    background-color: #878787;
+    position: absolute;
+    
+}
+
+.form_input{
+    width: 500px;
+    margin-top: 10px;
+    position: relative;
+    left: 100px;
+    top: 90px;
+    flex-direction: column;
+}
+
+.text_value{
+    font: bold;
+    color: white;
+    
+}
+
+.enter_value{
+    display: block;
+    position: relative;
+    left: 25px;
+}
+
+.message{
+    display: block;
+    color: white;
+    position: relative;
+    left: 30px;
+}
+
+#button_submit{
+    position: relative;
+    top: 150px;
+    left: 150px;
+}
+
