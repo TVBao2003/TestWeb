@@ -1,6 +1,6 @@
 // Object.enter(person) create a new object which has old properties
 // Object.entries(person) return an array include elements [kay, value]
-// Object.assign(object store, first object stored, second object stored,..,last object stored) return a new object
+// Object.assign(object stored, first object store, second object store,..,last object store) return a new object
 // Object.keys(object) return an array contain keys of object
 // Object.values(object) return an array contain values of object
 
@@ -37,9 +37,9 @@ for(var value of arrayOfValues) console.log(value);
 // Array.find(callback) return a first element which has true value, but if array doesn't have any elements which has true value, so return undefined;
 // Array.findIndex(callback) return a first index that the element has the true value, but if the array doesn't have any elements which has true value, so return -1;
 // Array.includes(valueFind) return a value is true or false, return true if array has valueFind else return false when array doesn't have valueFind;
-// Array.lastIndexOf(valueFind, positionEnd) return index of last element, if array doesn't have any elements, so return -1, positionEnd is position to end to find; if positionELement negative number, positionEnd will start from last Array;
-// Array.indexOf(valueFind, positionStart) return index of element , if array doesn't have ant elements, so return -1, positionStart is position to start to find; if positionStart is negative number, positionStart will start from last Array;
-// Array.join(string) return a new string by join elements of array  with string;
+// Array.lastIndexOf(valueFind, positionEnd) return index of last element, if array doesn't have any elements, so return -1, positionEnd is position to finished finding; if positionEnd negative number, positionEnd will start from last Array;
+// Array.indexOf(valueFind, positionStart) return index of element , if array doesn't have any elements, so return -1, positionStart is position to start finding; if positionStart is negative number, positionStart will start from last Array;
+// Array.join(string) return a new string by join elements of array  with parameters string;
 // Array.map(callback) return a new array, after elements go through callback;
 // Array.shift() delete element which has first position of array, return the deleted element;
 // Array.unshift(elements) add elements which has first position of array, return the new length of array;  
@@ -53,22 +53,27 @@ var arrayOfEvenNumbers = [2,4,6,8,10];
 
 var isEvenNumber = arrayOfEvenNumbers.every(function (element){
     return element%2==0;
-})
+})// return true
 
 var isOddNumber = arrayOfOddNumbers.some(function(element){
     return element%2==0;
-})
+})// return false
 
+console.log("-----display variable Even Number and variable Odd Number-----------");
+console.log(isEvenNumber+"   "+isOddNumber);
 
 var isGreaterFifteen = arrayOfEvenNumbers.findIndex(function (element){
     return element > 15;
-})
+})//return -1
 
 var isGreaterTwenty = arrayOfOddNumbers.find(function (element){
     return element > 20;
-})
+})//return undefined
 
-var isPrimesNumber = arrayOfOddNumbers.forEach(function(element){
+console.log("-------display variable isGreaterFifteen and variable isGreaterTwenty--------");
+console.log(isGreaterFifteen +"   "+isGreaterTwenty);
+
+arrayOfOddNumbers.forEach(function(element){
     var check = false;
     for(let i=2; i<= Math.sqrt(element);i++){
         if(element %i == 0) {
@@ -76,18 +81,19 @@ var isPrimesNumber = arrayOfOddNumbers.forEach(function(element){
             break;
         }
     }
-
     if(element == 1) check = true;
     if(check) console.log("Not is primes Number");
     else console.log(element);   
     
 })
 
-var checkFiveNumber = arrayOfOddNumbers.includes(5);
+
+var checkFiveNumber = arrayOfOddNumbers.includes(5);//return true;
+console.log("-----display variable checkFiveNumber: ", checkFiveNumber);
 
 var arrayNumbers = [3,4,5,3,5,7,3,6];
-var indexOfElement = arrayNumbers.indexOf(3,-3);
-var indexOfLastElement = arrayNumbers.lastIndexOf(3,2);
+var indexOfElement = arrayNumbers.indexOf(3,-2);//return 6;
+var indexOfLastElement = arrayNumbers.lastIndexOf(4,1);//return 1
 
 console.log(indexOfElement, indexOfLastElement);
 
@@ -155,8 +161,6 @@ for(let x of str){
 }
 
 console.log(str);
-
-
 
 
 

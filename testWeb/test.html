@@ -79,8 +79,8 @@
             background-origin: padding-box;
             box-shadow: -50px 30px 25px rgba(0,0,0,0.3), -30px 20px 15px rgba(0, 0, 0, 0.4);
             margin: auto;
-            
         }
+        
         .photo_cat:hover{
             animation-name: trans;
             animation-duration: 15s;
@@ -187,9 +187,9 @@
     
     <main>
         <style>
-            #audio_first{
+            .audio{
                 display: block;
-                margin: auto;
+                margin: 20px auto;
             }
             .photo_dev{
                 text-align: center;
@@ -200,6 +200,9 @@
         <p>I'm <s>Bao</s>, today i am studying <em>code</em> <strong>HTML</strong> on <u>TEK4</u> website, i feel so tired but i will try to study to success </p>
         <input tabindex="1" type="submit" value="submit">
         <button tabindex="-1" type="submit">submit</button>
+        <button>
+            <a href="./FormSignIn/form_sign_in.html">Form Sign In</a>
+        </button>
         <br>
         <br>
         <article>
@@ -265,8 +268,11 @@
         </article>
         <br>
         <br>
-        <audio id="audio_first" autoplay preload controls loop tabindex="-1" type="audio/ogg"  src="music1.mp3"></audio>
+
+        <audio id="audio_first" class="audio" autoplay preload controls loop tabindex="-1" type="audio/ogg"  src="music1.mp3"></audio>
+        <audio id="audio_second" class = "audio" preload controls loop tabindex="-1" type="audio/ogg"  src="music.mp3"></audio>
         <br>
+
         <br>
         <fieldset>
             <legend  tabindex="0" ><strong>Position of Label Tags</strong></legend>
@@ -587,17 +593,6 @@
         </div>
         
         <style>
-            #contain_plan{
-                height: auto;
-                width: auto;
-                background-color: white;
-                position: relative;
-                top: 200px;
-                display: grid;
-                grid-template-columns: repeat(4, 200px);
-                grid-template-rows: repeat(2,150px);
-                text-align: center;
-            }
             .plan{
                 width: 100px;
                 height: 100px;
@@ -606,113 +601,57 @@
                 margin: auto;
                 padding: 10px;
             }
-             #block_contain-grid{
+            #block_contain-grid{
                 height: 200px;
                 width: 200px;
                 background-color: black;
             }
+            
+            #contain_plan{
+                width: auto;
+                height: auto;
+                background-color: white;
+                position: relative;
+                top: 200px;
+                color: white;
+                display: flex;
+                justify-content:space-between;
+            }
+
+            .block_title{
+                background-color: blue;
+            }
+             #list_items{
+                display: flex;
+                list-style: none;
+                width:400px ;
+             }
+
+             #list_items li{
+                width: 70px;
+                background-color: red;
+                margin-right: 20px;
+             }
+
+             @media (max-width: 1024px){
+                #contain_plan{
+                    display: block;
+                }
+            }
         </style>
         <article id="contain_plan">
-            <div class="plan">English <br><br> CNXH</div>
-            <div class="plan"></div>
-            <div class="plan">DataBase</div>
-            <div class="plan">Exercise</div>
-            <div class="plan">Computers network</div>
-            <div class="plan">Kĩ thuật lập trình</div>
-            <div class="plan">OOP</div>
-            <div class="plan"></div>
+            <div class="block_title">HTML-CSS-JS</div>
+            <div class="menu">
+                <ul id="list_items">
+                    <li>Home</li>
+                    <li>Phone</li>
+                    <li>List</li>
+                    <li>Search</li>
+                    <li>Sign In</li>
+                </ul>
+            </div>
         </article>
 
-        <style>
-            #block_contain-grid{
-                height: auto;
-                width: 400px;
-                background-color: rgb(0, 149, 255);
-                position: relative;
-                top: 250px;
-                padding: 10px;
-                margin: auto;
-                display: grid;
-                gap: 10px;
-                grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
-                
-            }
-            .block-grid{
-                padding: 20px 0;
-                text-align: center;
-                font-size: 20px;
-                background-color: rgba(0, 187, 255, 0.926);
-            }
-            #block1{
-                grid-column: 1 /span 3;
-                grid-row: 2/ span 3;
-                
-            }
-        </style>
-
-        <article id="block_contain-grid">
-            <div id="block1" class="block-grid">
-                <1></1>
-            </div>
-            <div id="block2" class="block-grid">
-                <2></2>
-            </div>
-            <div id="block3" class="block-grid">
-                <3></3>
-            </div>
-            <div id="block4" class="block-grid">
-                <4></4>
-            </div>
-            <div id="block5" class="block-grid">
-                <5></5>
-            </div>
-            <div id="block6" class="block-grid">
-                <6></6>
-            </div>
-            <div id="block7" class="block-grid">
-                <7></7>
-            </div>
-            <div id="block8" class="block-grid">
-                <8></8>
-            </div>
-            <div id="block9" class="block-grid">
-                <9></9>
-            </div>
-            <div id="block10" class="block-grid">
-                <10></10>
-            </div>
-            <div id="block11" class="block-grid">
-                <11></11>
-            </div>
-            <div id="block12" class="block-grid">
-                <12></12>
-            </div>
-            <div id="block13" class="block-grid">
-                <13></13>
-            </div>
-            <div id="block14" class="block-grid">
-                <14></14>
-            </div>
-            <div id="block15" class="block-grid">
-                <15></15>
-            </div>
-            <div id="block16" class="block-grid">
-                <16></16>
-            </div>
-            <div id="block17" class="block-grid">
-                <17></17>
-            </div>
-            <div id="block18" class="block-grid">
-                <18></18>
-            </div>
-            <div id="block19" class="block-grid">
-                <19></19>
-            </div>
-            <div id="block20" class="block-grid">
-                <20></20>
-            </div>
-            
-        </article>
     </footer>
     
 </body>
